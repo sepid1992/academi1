@@ -1,0 +1,25 @@
+﻿{%extends "project/master1.html"%}
+{%block align%}
+{%for s in shop%}              
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product-item">
+                            
+                            <a href="{{s.id}}.html">
+                                <img style="width:150px" src="{s.img.url}" alt="Product Images">
+                            </a>
+                            <div class="product-cotent">
+                                <div class="product-text">
+                                    <a href="/show/{{s.id}}"> 
+                                        <h3>{{s.onvan}} </h3>
+                                    </a>
+                                    <span>{{s.price}} تومان</span>
+                                </div>
+                                <a href="#" class="add-product">
+                                    <i class="flaticon-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+{%endfor%}
+{%endblock%}

@@ -1,0 +1,88 @@
+{%extends "project/master2.html"%}
+{%block title%}
+<div class="d-table">
+    <div class="d-table-cell">
+        <div class="conatiner">
+            <div class="inner-title text-center">
+                <h3>دوره ها</h3>
+                <ul>
+                    <li>
+                        <a href="index.html">صفحه اصلی</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-chevron-left"></i>
+                    </li>
+                    <li>
+                        دوره ها
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{%endblock%}
+
+{%block content%}
+<div class="course-area pt-100 pb-70">
+<div class="container">
+    {%load static%}
+    <div class="section-title text-center mb-50">
+        <span>دوره ها</span>
+        <h2>دوره های آموزشی ما</h2>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <div class="courses-card-item">
+                <div class="courses-card-img">
+                    <a href="#">
+                        <img src="{%static 'project/assets/img/course/a44.jpg'%}" alt="Course Images">
+                    </a>
+                    <div class="courses-card-text"> </div>
+                </div>
+                <ul>
+                    <li class="active">اکنون در دسترس</li>
+                    <li>10 روز</li>
+                </ul>
+                <div class="courses-card-content">
+                    <a href="#">
+                        <h3>چهار شنای مبتدی</h3>
+                    </a> 
+                    <p> برای توانایی بهتر در شنا، تقویت عضلات بسیار مهم است. در دوره‌های مبتدی، معمولاً تمریناتی برای تقویت عضلات ارائه می‌شودر دوره شنا مبتدی، شما با تکنیک‌های مبتدی شنا آشنا می‌شوید. این شامل یادگیری نحوه‌ی تنفس، حرکات پایی، و تکنیک‌های اصلی شنا می‌شود چگونه خودتان را از خستگی در آب حفظ کنید و به تدریج استقامتتان را افزایش دهید.
+
+                    </p>
+                    <a href="#" class="course-book-btn">رزرو کن</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="courses-card-item">
+                <div class="courses-card-img">
+                    <a href="#">
+                        <img style="width:150" src="{%static 'project/assets/img/course/a3.jpg'%}" alt="Course Images">
+                    </a>
+                    <div class="courses-card-text"> </div>
+                </div>
+                <ul>
+                    <li class="active">اکنون در دسترس</li>
+                    <li>20 روز</li>
+                </ul>
+                <div class="courses-card-content">
+                    <a href="#">
+                        <h3> چهار شنای پیشرفته</h3>
+                    </a>
+                    <p>
+                        شنای پیشرفته برای افرادی است که تجربه‌ی قبلی در شنا دارند و می‌خواهند مهارت‌های خود را به سطح بالاتری برسانند. در شنای پیشرفته، تمرکز بیشتری بر روی تکنیک، سرعت، دقت، و توانایی‌های شنایی خاص قرار می‌گیرد..
+                
+                    </p>
+                    <a href="#" class="course-book-btn">رزرو کن</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+{%endblock%}
