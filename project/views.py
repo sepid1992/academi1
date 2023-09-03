@@ -32,3 +32,5 @@ def instructor(request):
     return render(request,"project/instructor.html")
 def courses(request):
     return render(request,"project/courses.html")
+def gallery(request):
+    return render(request,"project/gallery.html")

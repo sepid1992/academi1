@@ -12,7 +12,8 @@ urlpatterns = [
     path('show/',shop),
     path('about/',about),
     path('instructor/',instructor),
-    path('courses/',courses)
-       
+    path('courses/',courses),
+    path('gallery/',gallery)
 ]
 urlpatterns +=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+

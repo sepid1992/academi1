@@ -9,6 +9,7 @@ class  shop (models.Model):
     noe=models.IntegerField(default=1)
     def __str__(self):
         return self.onvan
+    
 
 
 class contact(models.Model):
@@ -16,8 +17,15 @@ class contact(models.Model):
     email=models.CharField(max_length=30)
     phone_number=models.CharField(max_length=20)
     msg_subject=models.CharField(max_length=500)
-   
-    
+    def __str__(self):
+        return self.name
+
+class home(models.Model):
+    name=models.CharField(max_length=20)
+    ax1=models.ImageField(upload_to="ax1")
+    noe=models.IntegerField(default=1)
+    def __str__(self):
+        return self.name
     
     
     
